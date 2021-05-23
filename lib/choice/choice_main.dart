@@ -28,10 +28,10 @@ class _ChoiceMainState extends State<ChoiceMain> {
         elevation: 0.0,
         bottomOpacity: 0.0,
         //앱바 컬러
-        backgroundColor: Color(0XFF2C2C2C),
+        backgroundColor: Color(0XFF242315),
         title: Padding(
           padding: const EdgeInsets.only(left:8.0),
-          child: Text('OWL',style: TextStyle(fontSize: 20),),
+          child: Text('OWL',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
         ),
       ),
       // 앱 메인화면
@@ -75,7 +75,13 @@ class _ChoiceMainState extends State<ChoiceMain> {
               ChoiceCard(),
             ],
           ),
-
+          Padding(
+            padding: const EdgeInsets.only(left:320.0,top: 100),
+            child: FloatingActionButton(onPressed: () {},
+              child: const Icon(Icons.arrow_drop_down_circle_outlined,color: Colors.black,),
+              backgroundColor: Color(0Xff94A6FF),
+            ),
+          ),
         ],
       ),
     );

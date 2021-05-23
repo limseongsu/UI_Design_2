@@ -1,4 +1,4 @@
-#Fri May 21 10:33:06 KST 2021
+#Sat May 22 17:14:19 KST 2021
 base.0=/Users/imseongsu/dev/AndroidStudioProjects/ui_design_samples/ui_design_2_owl/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
