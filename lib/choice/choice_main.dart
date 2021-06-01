@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ui_design_samples/choice/choice_middle_card.dart';
+import 'package:ui_design_samples/main/check_main.dart';
+import 'package:ui_design_samples/main/pages/pagecontrol/pagecontrol.dart';
+
 
 class ChoiceMain extends StatefulWidget {
   const ChoiceMain({Key key}) : super(key: key);
@@ -77,9 +80,13 @@ class _ChoiceMainState extends State<ChoiceMain> {
           ),
           Padding(
             padding: const EdgeInsets.only(left:320.0,top: 100),
-            child: FloatingActionButton(onPressed: () {},
+            child: FloatingActionButton(onPressed: () {
+              setState(() {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => CheckMain()));
+              });
+            },
               child: const Icon(Icons.arrow_drop_down_circle_outlined,color: Colors.black,),
-              backgroundColor: Color(0Xff94A6FF),
+              backgroundColor: Color(0Xff94A6FF), // 플로팅액션버튼 색상
             ),
           ),
         ],

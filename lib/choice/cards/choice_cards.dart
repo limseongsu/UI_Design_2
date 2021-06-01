@@ -17,8 +17,8 @@ class _CardsState extends State<Cards> {
         color: Color(0xff2E2D23),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkZZGlHysqbdfOeOz_Q5IrEZeixF7AoWW-Tg&usqp=CAU',),
+          children: <Widget>[
+            Image.asset('images/arts_crafts.jpeg',fit: BoxFit.cover,),
             Column(
               children: [
                 Padding(
